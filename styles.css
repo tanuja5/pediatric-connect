@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+}
+
+.calendly {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.header {
+    grid-column: span 2;
+    background-color: #6c757d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.calendar {
+    padding: 20px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-header h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    color: #0dcaf0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    text-decoration: underline;
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.day {
+    text-align: center;
+    font-weight: bold;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.days .day {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.days .day.active {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.booking-form {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6c757d;
+}
+
+#confirmationMessage {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #0dcaf0;
+}
+/* Add to your styles.css */
+
+.time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.time-slot {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: calc(33.3333% - 10px);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.time-slot.active {
+    background-color: #6c757d;
+    color: white;
+}
+
+.time-slot:hover {
+    background-color: #f0f0f0;
+}
